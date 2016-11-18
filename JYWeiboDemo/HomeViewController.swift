@@ -22,9 +22,11 @@ class HomeViewController: JVVBaseViewController {
     
    override func loadData() {
     
+        refreshControl?.beginrefresh()
+    
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             
-            self.listViewModel.loadStatus(isPullup: false) { (isSuccess,shouldRefresh) in
+            self.listViewModel.loadStatus(isPullup: self.isPullup) { (isSuccess,shouldRefresh) in
                 
                 if self.isPullup == false {
                     

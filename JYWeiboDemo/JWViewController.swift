@@ -66,7 +66,7 @@ class JWViewController: UITabBarController {
                 let imageName = dic["imageName"] as? String,
                 let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? JVVBaseViewController.Type,
         
-                let visitorDic = dic["visitorInfo"] as? [String: String]
+                let _ = dic["visitorInfo"] as? [String: String]
         
             else {
                 

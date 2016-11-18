@@ -12,11 +12,13 @@ class JVVBaseViewController: UIViewController {
     
     var isPullup = false
     
+    var refreshControl:JYRefreshControl?
+    
     var tableView: UITableView?
     
     func loadData() {
         
-        
+        refreshControl?.endRefreshing()
     
     }
     
@@ -44,9 +46,6 @@ class JVVBaseViewController: UIViewController {
         }
         
     }
-    
-   
-    
     
     
     lazy var navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
@@ -84,7 +83,11 @@ extension JVVBaseViewController {
         
         tableView?.scrollIndicatorInsets = tableView!.contentInset
         
-    
+        refreshControl = JYRefreshControl()
+        
+        tableView?.addSubview(refreshControl!)
+        
+        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
     
     fileprivate func setNavBar() {
@@ -133,7 +136,9 @@ extension JVVBaseViewController: UITableViewDelegate, UITableViewDataSource {
             
             isPullup = true
             
+            print("上拉刷新中")
             
+            loadData()
         
         }
     }

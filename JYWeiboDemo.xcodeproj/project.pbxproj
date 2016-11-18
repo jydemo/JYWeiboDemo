@@ -36,6 +36,9 @@
 		5C5969A41DD45F9100971BF7 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */; };
 		5C5969A61DD45FA200971BF7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A51DD45FA200971BF7 /* ProfileViewController.swift */; };
 		5C7C3D881DDEE9C100546E91 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C3D871DDEE9C100546E91 /* UIImage+extension.swift */; };
+		5C7C3D8B1DDEF75800546E91 /* JVRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C3D8A1DDEF75800546E91 /* JVRefreshView.swift */; };
+		5C7C3D8D1DDEF79B00546E91 /* JYRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C3D8C1DDEF79B00546E91 /* JYRefreshControl.swift */; };
+		5C7C3D8F1DDEF8B700546E91 /* JYRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */; };
 		5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */; };
 		5CA91EC41DD5C335005E51C1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC31DD5C335005E51C1 /* String+Extension.swift */; };
 		5CB3DB841DD46A110096864F /* JVVNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */; };
@@ -83,6 +86,9 @@
 		5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		5C5969A51DD45FA200971BF7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5C7C3D871DDEE9C100546E91 /* UIImage+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		5C7C3D8A1DDEF75800546E91 /* JVRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVRefreshView.swift; sourceTree = "<group>"; };
+		5C7C3D8C1DDEF79B00546E91 /* JYRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYRefreshControl.swift; sourceTree = "<group>"; };
+		5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYRefreshView.xib; sourceTree = "<group>"; };
 		5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVVUserAccount.swift; path = ../JVVUserAccount.swift; sourceTree = "<group>"; };
 		5CA91EC31DD5C335005E51C1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../String+Extension.swift"; sourceTree = "<group>"; };
 		5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVNewFeatureView.swift; sourceTree = "<group>"; };
@@ -224,6 +230,7 @@
 		5C0E0F401DD96E22000636EB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5C7C3D891DDEF73A00546E91 /* Refresh */,
 				5C0F460B1DD9A8DF00404431 /* UIImageView+WebImage.swift */,
 				5CA91EC31DD5C335005E51C1 /* String+Extension.swift */,
 				5C23832D1DD3FAF700DE3C10 /* Bundle+extension.swift */,
@@ -244,6 +251,16 @@
 				5C0E0F301DD93E65000636EB /* JVVStatusNormalCell.xib */,
 			);
 			name = StatusCell;
+			sourceTree = "<group>";
+		};
+		5C7C3D891DDEF73A00546E91 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				5C7C3D8A1DDEF75800546E91 /* JVRefreshView.swift */,
+				5C7C3D8C1DDEF79B00546E91 /* JYRefreshControl.swift */,
+				5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */,
+			);
+			name = Refresh;
 			sourceTree = "<group>";
 		};
 		5CB4C2D11DD31C8D00DECB55 = {
@@ -363,6 +380,7 @@
 				5CB4C2E81DD31C8D00DECB55 /* LaunchScreen.storyboard in Resources */,
 				5CB4C2E51DD31C8D00DECB55 /* Assets.xcassets in Resources */,
 				5C0E0F421DD96E9A000636EB /* JVVStatusRetweedCell.xib in Resources */,
+				5C7C3D8F1DDEF8B700546E91 /* JYRefreshView.xib in Resources */,
 				5C23832C1DD3FAB200DE3C10 /* Main.json in Resources */,
 				5CB3DB881DD46AD50096864F /* JVVNewFeatureView.xib in Resources */,
 				5C0E0F311DD93E65000636EB /* JVVStatusNormalCell.xib in Resources */,
@@ -425,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7C3D8D1DDEF79B00546E91 /* JYRefreshControl.swift in Sources */,
 				5C23832A1DD3FAA500DE3C10 /* JVVMainViewController.swift in Sources */,
 				5C0F460C1DD9A8DF00404431 /* UIImageView+WebImage.swift in Sources */,
 				5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */,
@@ -455,6 +474,7 @@
 				5C4F747D1DD6A4070051A828 /* JVVFPSLabel.swift in Sources */,
 				5C2383321DD3FB9500DE3C10 /* JVVBaseViewController.swift in Sources */,
 				5CB4C2F01DD31D4400DECB55 /* JWViewController.swift in Sources */,
+				5C7C3D8B1DDEF75800546E91 /* JVRefreshView.swift in Sources */,
 				5C4F74851DD6BA4E0051A828 /* JVVUser.swift in Sources */,
 				5C7C3D881DDEE9C100546E91 /* UIImage+extension.swift in Sources */,
 				5C0F46081DD98DBD00404431 /* Status.swift in Sources */,
