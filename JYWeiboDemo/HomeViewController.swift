@@ -113,7 +113,11 @@ extension HomeViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 350.0
+        let viewModel = listViewModel.statusList[indexPath.row]
+        
+        print("row height \(viewModel.status.user?.name) ------- \(viewModel.rowHeight)")
+        
+        return viewModel.rowHeight
         
     }
 

@@ -137,7 +137,7 @@ class Status: NSObject {
             
             if let dict = value as? [String: AnyObject] {
                 
-                print("\(dict)")
+               // print("\(dict)")
                 
                 
                 user = User(dict: dict)

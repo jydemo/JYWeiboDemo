@@ -77,6 +77,9 @@ class JVVStatusPictureView: UIView {
                 
             } else {
                 
+                let v = subviews[0]
+                
+                v.frame = CGRect(x: 0, y: pictrueOutterMargin, width: JVVStatusPictrueItemWidth, height: JVVStatusPictrueItemWidth)
                 
             }
         

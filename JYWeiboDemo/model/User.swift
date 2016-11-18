@@ -14,7 +14,7 @@ class User: NSObject {
     
     var name: String?
     
-    var imageURL: NSURL?
+    var imageURL: URL?
     
     var profile_image_url: String? {
         
@@ -22,7 +22,7 @@ class User: NSObject {
             
             if let url = profile_image_url {
             
-                imageURL = NSURL(string: url)
+                imageURL = URL(string: url)
             }
         
             

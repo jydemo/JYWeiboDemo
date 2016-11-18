@@ -35,6 +35,7 @@
 		5C5969A21DD45F8000971BF7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A11DD45F8000971BF7 /* MessageViewController.swift */; };
 		5C5969A41DD45F9100971BF7 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */; };
 		5C5969A61DD45FA200971BF7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A51DD45FA200971BF7 /* ProfileViewController.swift */; };
+		5C7C3D881DDEE9C100546E91 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C3D871DDEE9C100546E91 /* UIImage+extension.swift */; };
 		5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */; };
 		5CA91EC41DD5C335005E51C1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC31DD5C335005E51C1 /* String+Extension.swift */; };
 		5CB3DB841DD46A110096864F /* JVVNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */; };
@@ -81,6 +82,7 @@
 		5C5969A11DD45F8000971BF7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		5C5969A51DD45FA200971BF7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5C7C3D871DDEE9C100546E91 /* UIImage+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
 		5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVVUserAccount.swift; path = ../JVVUserAccount.swift; sourceTree = "<group>"; };
 		5CA91EC31DD5C335005E51C1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../String+Extension.swift"; sourceTree = "<group>"; };
 		5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVNewFeatureView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				5CB4C2F11DD31E2A00DECB55 /* UIButtonExtension.swift */,
 				5C4F74881DD6C38D0051A828 /* UIScreen+Extension.swift */,
 				5C4887361DD5BEA700806BC5 /* JVVVNetworkManager.swift */,
+				5C7C3D871DDEE9C100546E91 /* UIImage+extension.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -322,7 +325,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = atom;
 				TargetAttributes = {
 					5CB4C2D91DD31C8D00DECB55 = {
@@ -453,6 +456,7 @@
 				5C2383321DD3FB9500DE3C10 /* JVVBaseViewController.swift in Sources */,
 				5CB4C2F01DD31D4400DECB55 /* JWViewController.swift in Sources */,
 				5C4F74851DD6BA4E0051A828 /* JVVUser.swift in Sources */,
+				5C7C3D881DDEE9C100546E91 /* UIImage+extension.swift in Sources */,
 				5C0F46081DD98DBD00404431 /* Status.swift in Sources */,
 				5C0E0F351DD958A0000636EB /* VVLabel.swift in Sources */,
 			);
@@ -498,6 +502,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -547,6 +552,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -575,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED3F7759BB66B15A19FA2ED5 /* Pods-JYWeiboDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE8CSGTB5D;
 				INFOPLIST_FILE = JYWeiboDemo/Info.plist;
@@ -589,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19660B1023BE28423EC52D21 /* Pods-JYWeiboDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE8CSGTB5D;
 				INFOPLIST_FILE = JYWeiboDemo/Info.plist;

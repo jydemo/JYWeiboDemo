@@ -27,7 +27,9 @@ class JVVStatusCell: UITableViewCell {
             
             if let model = viewModel {
                 
-                statusLabel.text = model.status.text
+                statusLabel.attributedText = model.statusAttrText
+                
+                headIV.vv_setImage(urlStr: model.status.user?.imageURL, placeholderImage: UIImage(named: "avatar_default_big"), isAvatar: true)
                 
                 nameLabel.text = model.status.user?.name
                 
@@ -35,19 +37,21 @@ class JVVStatusCell: UITableViewCell {
                 
                 vipIV.image = model.status.user?.verified_img
                 
-                let retweetedStatus = model.status.retweeted_Status
+                retweededTextLab?.attributedText = model.retweededAttrText
                 
-                retweededTextLab?.text = "\(retweetedStatus?.user?.name): \(retweetedStatus?.text)"
+                retweetedButton.setTitle(model.retweetedStr!, for: .normal)
                 
-                retweetedButton.setTitle("\(model.status.reposts_count)", for: .normal)
+                commmentButton.setTitle(model.commentStr!, for: .normal)
                 
-                commmentButton.setTitle("\(model.status.comments_count)", for: .normal)
-                
-                likeButton.setTitle("\(model.status.attitudes_count)", for: .normal)
+                likeButton.setTitle(model.likeStr!, for: .normal)
                 
                 sourceLabel.text = model.status.source
                 
                 pictureView.viewModel = model
+                
+                print("底部工具栏\(model.status.user?.name) \(footerView.frame.maxY)")
+                
+                //model.rowHeight = footerView.frame.maxY
             
             }
             

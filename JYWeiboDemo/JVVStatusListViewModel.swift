@@ -73,9 +73,7 @@ class JVVStatusListViewModel {
             
             } else {
                 
-                //self.cacheSingleImage(list: array, finished: completion)
-                
-                completion(true, true)
+                self.cacheSingleImage(list: array, finished: completion)
             
             }
             
@@ -93,35 +91,35 @@ class JVVStatusListViewModel {
         
         for vm in list {
             
-            if vm.picURLs?.count != 1 {
+            if vm.status.repic_urls?.count != 1 {
                 
                 continue
             
             }
             
-            guard let picURL = vm.picURLs?[0].thumbnail_pic, let url = URL(string: picURL) else {
+            guard let picURL = vm.status.repic_urls?[0] else {
                 continue
             }
             
             group.enter()
             
-            KingfisherManager.shared.downloader.downloadImage(with: url, options: [], progressBlock: nil) { (image, _, _, _) in
-                
+            KingfisherManager.shared.downloader.downloadImage(with: picURL, options: [], progressBlock: nil, completionHandler: { (image, error, url, data) in
                 if let image = image, let data = UIImagePNGRepresentation(image) {
-                        
-                        length += data.count
+                
+                    length += data.count
                     
-                        vm.updateImageSize(image: image)
-                    
+                    vm.updateImageSize(image: image)
+                
                 }
                 
-                    group.leave()
-                
-            }
+                group.leave()
+            })
         
         }
         
         group.notify(queue: DispatchQueue.main) {
+            
+            print("图像缓存\(length/1024)k")
             
             finished(true, true)
         }

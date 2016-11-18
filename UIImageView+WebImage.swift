@@ -26,7 +26,7 @@ extension UIImageView {
             
             if isAvatar {
                 
-                //self.image = image
+                self.image = image?.vvv_avatarImage(size: self.bounds.size)
             
             }
         

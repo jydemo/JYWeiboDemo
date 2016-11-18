@@ -68,9 +68,17 @@ class JVVStatusViewModel {
         
         //let retweetedFont = UIFont.systemFont(ofSize: 14)
         
-        //let  rText = "@" + (model.retweeted_status?.user?.screen_name ?? "") + ":" + (model.retweeted_status?.text ?? "")
+        if let retweetedStatus = model.retweeted_Status, let name = retweetedStatus.user?.name, let text = retweetedStatus.text {
+            
+            let  rText = (name) + ":" + (text)
+            
+            retweededAttrText = NSMutableAttributedString(string: rText)
         
-        //retweededAttrText =
+        }
+        
+        
+        statusAttrText = NSMutableAttributedString(string: model.text!)
+        
         
         updateReowHeight()
         
@@ -84,7 +92,7 @@ class JVVStatusViewModel {
         
         let bottomBarHeight: CGFloat = 35
         
-        let viewSize = CGSize(width: UIScreen.main.bounds.size.width, height: CGFloat(MAXFLOAT))
+        let viewSize = CGSize(width: UIScreen.main.bounds.size.width - 2 * margin, height: CGFloat(MAXFLOAT))
     
         var height = 2 * margin + iconHeight + margin
         
@@ -140,6 +148,8 @@ class JVVStatusViewModel {
         
         size.height += pictrueOutterMargin
         
+        pictureViewSize = size
+        
         updateReowHeight()
     
     }
@@ -148,11 +158,11 @@ class JVVStatusViewModel {
         
         if count == 0 || count == nil {
             
-            return CGSize(width: 0, height: 0)
+            return CGSize()
         
         }
         
-        let row = (count! - 1) / 3 + 1
+        let row = (count! - 1)/3 + 1
         
         let height = pictrueOutterMargin + CGFloat(row) * JVVStatusPictrueItemWidth + CGFloat(row - 1) * pictrueInnerMargin
         
