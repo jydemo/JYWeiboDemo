@@ -7,14 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0E0F2F1DD93E41000636EB /* JVVStatuscell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E0F2E1DD93E41000636EB /* JVVStatuscell.swift */; };
+		5C0E0F311DD93E65000636EB /* JVVStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E0F301DD93E65000636EB /* JVVStatusNormalCell.xib */; };
+		5C0E0F331DD956B0000636EB /* JVVStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E0F321DD956B0000636EB /* JVVStatusPictureView.swift */; };
+		5C0E0F351DD958A0000636EB /* VVLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E0F341DD958A0000636EB /* VVLabel.swift */; };
+		5C0E0F421DD96E9A000636EB /* JVVStatusRetweedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C0E0F411DD96E9A000636EB /* JVVStatusRetweedCell.xib */; };
+		5C0F46051DD98DBD00404431 /* CmmentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F46011DD98DBD00404431 /* CmmentStatus.swift */; };
+		5C0F46061DD98DBD00404431 /* CmmentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F46021DD98DBD00404431 /* CmmentUser.swift */; };
+		5C0F46071DD98DBD00404431 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F46031DD98DBD00404431 /* Comments.swift */; };
+		5C0F46081DD98DBD00404431 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F46041DD98DBD00404431 /* Status.swift */; };
+		5C0F460A1DD98E3E00404431 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F46091DD98E3E00404431 /* User.swift */; };
+		5C0F460C1DD9A8DF00404431 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F460B1DD9A8DF00404431 /* UIImageView+WebImage.swift */; };
+		5C23832A1DD3FAA500DE3C10 /* JVVMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2383281DD3FAA500DE3C10 /* JVVMainViewController.swift */; };
+		5C23832C1DD3FAB200DE3C10 /* Main.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C23832B1DD3FAB200DE3C10 /* Main.json */; };
+		5C23832E1DD3FAF700DE3C10 /* Bundle+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C23832D1DD3FAF700DE3C10 /* Bundle+extension.swift */; };
+		5C2383301DD3FB4800DE3C10 /* JVVNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C23832F1DD3FB4800DE3C10 /* JVVNavgationController.swift */; };
+		5C2383321DD3FB9500DE3C10 /* JVVBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2383311DD3FB9500DE3C10 /* JVVBaseViewController.swift */; };
+		5C4887371DD5BEA700806BC5 /* JVVVNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4887361DD5BEA700806BC5 /* JVVVNetworkManager.swift */; };
+		5C4F747D1DD6A4070051A828 /* JVVFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F747C1DD6A4070051A828 /* JVVFPSLabel.swift */; };
+		5C4F747F1DD6B9360051A828 /* JVVStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F747E1DD6B9360051A828 /* JVVStatusListViewModel.swift */; };
+		5C4F74811DD6B9C60051A828 /* JVVStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74801DD6B9C60051A828 /* JVVStatusViewModel.swift */; };
+		5C4F74831DD6BA130051A828 /* JVVStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74821DD6BA130051A828 /* JVVStatus.swift */; };
+		5C4F74851DD6BA4E0051A828 /* JVVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74841DD6BA4E0051A828 /* JVVUser.swift */; };
+		5C4F74871DD6C23C0051A828 /* JVVeiboCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74861DD6C23C0051A828 /* JVVeiboCommon.swift */; };
+		5C4F74891DD6C38D0051A828 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74881DD6C38D0051A828 /* UIScreen+Extension.swift */; };
+		5C5969A01DD45F6B00971BF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59699F1DD45F6B00971BF7 /* HomeViewController.swift */; };
+		5C5969A21DD45F8000971BF7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A11DD45F8000971BF7 /* MessageViewController.swift */; };
+		5C5969A41DD45F9100971BF7 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */; };
+		5C5969A61DD45FA200971BF7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A51DD45FA200971BF7 /* ProfileViewController.swift */; };
+		5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */; };
+		5CA91EC41DD5C335005E51C1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC31DD5C335005E51C1 /* String+Extension.swift */; };
+		5CB3DB841DD46A110096864F /* JVVNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */; };
+		5CB3DB861DD46A780096864F /* JVVWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DB851DD46A780096864F /* JVVWelcomeView.swift */; };
+		5CB3DB881DD46AD50096864F /* JVVNewFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB3DB871DD46AD50096864F /* JVVNewFeatureView.xib */; };
+		5CB3DB8A1DD46AF10096864F /* JVVWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB3DB891DD46AF10096864F /* JVVWelcomeView.xib */; };
 		5CB4C2DE1DD31C8D00DECB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4C2DD1DD31C8D00DECB55 /* AppDelegate.swift */; };
 		5CB4C2E01DD31C8D00DECB55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4C2DF1DD31C8D00DECB55 /* ViewController.swift */; };
 		5CB4C2E31DD31C8D00DECB55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB4C2E11DD31C8D00DECB55 /* Main.storyboard */; };
 		5CB4C2E51DD31C8D00DECB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB4C2E41DD31C8D00DECB55 /* Assets.xcassets */; };
 		5CB4C2E81DD31C8D00DECB55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB4C2E61DD31C8D00DECB55 /* LaunchScreen.storyboard */; };
+		5CB4C2F01DD31D4400DECB55 /* JWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4C2EF1DD31D4400DECB55 /* JWViewController.swift */; };
+		5CB4C2F21DD31E2A00DECB55 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4C2F11DD31E2A00DECB55 /* UIButtonExtension.swift */; };
+		9337B7DB7346611CCBDB5FF9 /* Pods_JYWeiboDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F54B3200843E7D45A210D9 /* Pods_JYWeiboDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19660B1023BE28423EC52D21 /* Pods-JYWeiboDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYWeiboDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYWeiboDemo/Pods-JYWeiboDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5C0E0F2E1DD93E41000636EB /* JVVStatuscell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVStatuscell.swift; sourceTree = "<group>"; };
+		5C0E0F301DD93E65000636EB /* JVVStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVVStatusNormalCell.xib; sourceTree = "<group>"; };
+		5C0E0F321DD956B0000636EB /* JVVStatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVStatusPictureView.swift; sourceTree = "<group>"; };
+		5C0E0F341DD958A0000636EB /* VVLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVLabel.swift; sourceTree = "<group>"; };
+		5C0E0F411DD96E9A000636EB /* JVVStatusRetweedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVVStatusRetweedCell.xib; sourceTree = "<group>"; };
+		5C0F46011DD98DBD00404431 /* CmmentStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CmmentStatus.swift; path = model/CmmentStatus.swift; sourceTree = "<group>"; };
+		5C0F46021DD98DBD00404431 /* CmmentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CmmentUser.swift; path = model/CmmentUser.swift; sourceTree = "<group>"; };
+		5C0F46031DD98DBD00404431 /* Comments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comments.swift; path = model/Comments.swift; sourceTree = "<group>"; };
+		5C0F46041DD98DBD00404431 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Status.swift; path = model/Status.swift; sourceTree = "<group>"; };
+		5C0F46091DD98E3E00404431 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = model/User.swift; sourceTree = "<group>"; };
+		5C0F460B1DD9A8DF00404431 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+WebImage.swift"; path = "../UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		5C2383281DD3FAA500DE3C10 /* JVVMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVMainViewController.swift; sourceTree = "<group>"; };
+		5C23832B1DD3FAB200DE3C10 /* Main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Main.json; sourceTree = "<group>"; };
+		5C23832D1DD3FAF700DE3C10 /* Bundle+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+extension.swift"; sourceTree = "<group>"; };
+		5C23832F1DD3FB4800DE3C10 /* JVVNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVNavgationController.swift; sourceTree = "<group>"; };
+		5C2383311DD3FB9500DE3C10 /* JVVBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVBaseViewController.swift; sourceTree = "<group>"; };
+		5C4887361DD5BEA700806BC5 /* JVVVNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVVNetworkManager.swift; sourceTree = "<group>"; };
+		5C4F747C1DD6A4070051A828 /* JVVFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVFPSLabel.swift; sourceTree = "<group>"; };
+		5C4F747E1DD6B9360051A828 /* JVVStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVStatusListViewModel.swift; sourceTree = "<group>"; };
+		5C4F74801DD6B9C60051A828 /* JVVStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVStatusViewModel.swift; sourceTree = "<group>"; };
+		5C4F74821DD6BA130051A828 /* JVVStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVStatus.swift; sourceTree = "<group>"; };
+		5C4F74841DD6BA4E0051A828 /* JVVUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVUser.swift; sourceTree = "<group>"; };
+		5C4F74861DD6C23C0051A828 /* JVVeiboCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVeiboCommon.swift; sourceTree = "<group>"; };
+		5C4F74881DD6C38D0051A828 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		5C59699F1DD45F6B00971BF7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C5969A11DD45F8000971BF7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		5C5969A51DD45FA200971BF7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVVUserAccount.swift; path = ../JVVUserAccount.swift; sourceTree = "<group>"; };
+		5CA91EC31DD5C335005E51C1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../String+Extension.swift"; sourceTree = "<group>"; };
+		5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVNewFeatureView.swift; sourceTree = "<group>"; };
+		5CB3DB851DD46A780096864F /* JVVWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVWelcomeView.swift; sourceTree = "<group>"; };
+		5CB3DB871DD46AD50096864F /* JVVNewFeatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVVNewFeatureView.xib; sourceTree = "<group>"; };
+		5CB3DB891DD46AF10096864F /* JVVWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVVWelcomeView.xib; sourceTree = "<group>"; };
 		5CB4C2DA1DD31C8D00DECB55 /* JYWeiboDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYWeiboDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB4C2DD1DD31C8D00DECB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CB4C2DF1DD31C8D00DECB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +94,10 @@
 		5CB4C2E41DD31C8D00DECB55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CB4C2E71DD31C8D00DECB55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CB4C2E91DD31C8D00DECB55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB4C2EF1DD31D4400DECB55 /* JWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWViewController.swift; sourceTree = "<group>"; };
+		5CB4C2F11DD31E2A00DECB55 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		87F54B3200843E7D45A210D9 /* Pods_JYWeiboDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYWeiboDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3F7759BB66B15A19FA2ED5 /* Pods-JYWeiboDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYWeiboDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYWeiboDemo/Pods-JYWeiboDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +105,151 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9337B7DB7346611CCBDB5FF9 /* Pods_JYWeiboDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C0E0F361DD96D05000636EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E0F401DD96E22000636EB /* Utils */,
+				5C0E0F3E1DD96DE3000636EB /* ViewModel */,
+				5C0E0F3D1DD96D9F000636EB /* Model */,
+				5C0E0F371DD96D12000636EB /* View */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		5C0E0F371DD96D12000636EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E0F3F1DD96E02000636EB /* Other */,
+				5C0E0F3C1DD96D8B000636EB /* Profile */,
+				5C0E0F3B1DD96D76000636EB /* Discover */,
+				5C0E0F3A1DD96D69000636EB /* Message */,
+				5C0E0F391DD96D56000636EB /* Main */,
+				5C0E0F381DD96D1F000636EB /* Home */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5C0E0F381DD96D1F000636EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E0F431DD96EB1000636EB /* StatusCell */,
+				5CB3DB851DD46A780096864F /* JVVWelcomeView.swift */,
+				5C59699F1DD45F6B00971BF7 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		5C0E0F391DD96D56000636EB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5C23832B1DD3FAB200DE3C10 /* Main.json */,
+				5C2383281DD3FAA500DE3C10 /* JVVMainViewController.swift */,
+				5CB4C2EF1DD31D4400DECB55 /* JWViewController.swift */,
+				5C23832F1DD3FB4800DE3C10 /* JVVNavgationController.swift */,
+				5C2383311DD3FB9500DE3C10 /* JVVBaseViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5C0E0F3A1DD96D69000636EB /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				5C5969A11DD45F8000971BF7 /* MessageViewController.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		5C0E0F3B1DD96D76000636EB /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		5C0E0F3C1DD96D8B000636EB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5C5969A51DD45FA200971BF7 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5C0E0F3D1DD96D9F000636EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F46091DD98E3E00404431 /* User.swift */,
+				5C0F46011DD98DBD00404431 /* CmmentStatus.swift */,
+				5C0F46021DD98DBD00404431 /* CmmentUser.swift */,
+				5C0F46031DD98DBD00404431 /* Comments.swift */,
+				5C0F46041DD98DBD00404431 /* Status.swift */,
+				5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */,
+				5C4F74821DD6BA130051A828 /* JVVStatus.swift */,
+				5C4F74841DD6BA4E0051A828 /* JVVUser.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5C0E0F3E1DD96DE3000636EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F747E1DD6B9360051A828 /* JVVStatusListViewModel.swift */,
+				5C4F74801DD6B9C60051A828 /* JVVStatusViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C0E0F3F1DD96E02000636EB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */,
+				5CB3DB871DD46AD50096864F /* JVVNewFeatureView.xib */,
+				5CB3DB891DD46AF10096864F /* JVVWelcomeView.xib */,
+				5C4F747C1DD6A4070051A828 /* JVVFPSLabel.swift */,
+				5C4F74861DD6C23C0051A828 /* JVVeiboCommon.swift */,
+				5C0E0F341DD958A0000636EB /* VVLabel.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		5C0E0F401DD96E22000636EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F460B1DD9A8DF00404431 /* UIImageView+WebImage.swift */,
+				5CA91EC31DD5C335005E51C1 /* String+Extension.swift */,
+				5C23832D1DD3FAF700DE3C10 /* Bundle+extension.swift */,
+				5CB4C2F11DD31E2A00DECB55 /* UIButtonExtension.swift */,
+				5C4F74881DD6C38D0051A828 /* UIScreen+Extension.swift */,
+				5C4887361DD5BEA700806BC5 /* JVVVNetworkManager.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5C0E0F431DD96EB1000636EB /* StatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C0E0F321DD956B0000636EB /* JVVStatusPictureView.swift */,
+				5C0E0F2E1DD93E41000636EB /* JVVStatuscell.swift */,
+				5C0E0F411DD96E9A000636EB /* JVVStatusRetweedCell.xib */,
+				5C0E0F301DD93E65000636EB /* JVVStatusNormalCell.xib */,
+			);
+			name = StatusCell;
+			sourceTree = "<group>";
+		};
 		5CB4C2D11DD31C8D00DECB55 = {
 			isa = PBXGroup;
 			children = (
 				5CB4C2DC1DD31C8D00DECB55 /* JYWeiboDemo */,
 				5CB4C2DB1DD31C8D00DECB55 /* Products */,
+				ABF389AFAF9131150BC5E458 /* Pods */,
+				C434A94AC578BDCDAA2A17E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +264,7 @@
 		5CB4C2DC1DD31C8D00DECB55 /* JYWeiboDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5C0E0F361DD96D05000636EB /* Classes */,
 				5CB4C2DD1DD31C8D00DECB55 /* AppDelegate.swift */,
 				5CB4C2DF1DD31C8D00DECB55 /* ViewController.swift */,
 				5CB4C2E11DD31C8D00DECB55 /* Main.storyboard */,
@@ -64,6 +275,23 @@
 			path = JYWeiboDemo;
 			sourceTree = "<group>";
 		};
+		ABF389AFAF9131150BC5E458 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F7759BB66B15A19FA2ED5 /* Pods-JYWeiboDemo.debug.xcconfig */,
+				19660B1023BE28423EC52D21 /* Pods-JYWeiboDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C434A94AC578BDCDAA2A17E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F54B3200843E7D45A210D9 /* Pods_JYWeiboDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +299,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CB4C2EC1DD31C8D00DECB55 /* Build configuration list for PBXNativeTarget "JYWeiboDemo" */;
 			buildPhases = (
+				FC600BB96EA9FF4023913C2E /* 📦 Check Pods Manifest.lock */,
 				5CB4C2D61DD31C8D00DECB55 /* Sources */,
 				5CB4C2D71DD31C8D00DECB55 /* Frameworks */,
 				5CB4C2D81DD31C8D00DECB55 /* Resources */,
+				C5F5D4CF55FA0911F271BC17 /* 📦 Embed Pods Frameworks */,
+				6A67B8E7DEE05057BE8CEF88 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +328,7 @@
 					5CB4C2D91DD31C8D00DECB55 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = JE8CSGTB5D;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,21 +356,105 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB3DB8A1DD46AF10096864F /* JVVWelcomeView.xib in Resources */,
 				5CB4C2E81DD31C8D00DECB55 /* LaunchScreen.storyboard in Resources */,
 				5CB4C2E51DD31C8D00DECB55 /* Assets.xcassets in Resources */,
+				5C0E0F421DD96E9A000636EB /* JVVStatusRetweedCell.xib in Resources */,
+				5C23832C1DD3FAB200DE3C10 /* Main.json in Resources */,
+				5CB3DB881DD46AD50096864F /* JVVNewFeatureView.xib in Resources */,
+				5C0E0F311DD93E65000636EB /* JVVStatusNormalCell.xib in Resources */,
 				5CB4C2E31DD31C8D00DECB55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A67B8E7DEE05057BE8CEF88 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYWeiboDemo/Pods-JYWeiboDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F5D4CF55FA0911F271BC17 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYWeiboDemo/Pods-JYWeiboDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC600BB96EA9FF4023913C2E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5CB4C2D61DD31C8D00DECB55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C23832A1DD3FAA500DE3C10 /* JVVMainViewController.swift in Sources */,
+				5C0F460C1DD9A8DF00404431 /* UIImageView+WebImage.swift in Sources */,
+				5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */,
 				5CB4C2E01DD31C8D00DECB55 /* ViewController.swift in Sources */,
+				5CB4C2F21DD31E2A00DECB55 /* UIButtonExtension.swift in Sources */,
+				5C0F460A1DD98E3E00404431 /* User.swift in Sources */,
+				5C2383301DD3FB4800DE3C10 /* JVVNavgationController.swift in Sources */,
+				5C0E0F2F1DD93E41000636EB /* JVVStatuscell.swift in Sources */,
+				5C4F747F1DD6B9360051A828 /* JVVStatusListViewModel.swift in Sources */,
+				5C4887371DD5BEA700806BC5 /* JVVVNetworkManager.swift in Sources */,
+				5CB3DB841DD46A110096864F /* JVVNewFeatureView.swift in Sources */,
+				5C0F46051DD98DBD00404431 /* CmmentStatus.swift in Sources */,
+				5C5969A21DD45F8000971BF7 /* MessageViewController.swift in Sources */,
+				5C0F46071DD98DBD00404431 /* Comments.swift in Sources */,
+				5C4F74811DD6B9C60051A828 /* JVVStatusViewModel.swift in Sources */,
+				5CA91EC41DD5C335005E51C1 /* String+Extension.swift in Sources */,
+				5C4F74871DD6C23C0051A828 /* JVVeiboCommon.swift in Sources */,
+				5CB3DB861DD46A780096864F /* JVVWelcomeView.swift in Sources */,
+				5C23832E1DD3FAF700DE3C10 /* Bundle+extension.swift in Sources */,
+				5C5969A61DD45FA200971BF7 /* ProfileViewController.swift in Sources */,
+				5C5969A01DD45F6B00971BF7 /* HomeViewController.swift in Sources */,
+				5C0F46061DD98DBD00404431 /* CmmentUser.swift in Sources */,
 				5CB4C2DE1DD31C8D00DECB55 /* AppDelegate.swift in Sources */,
+				5C4F74891DD6C38D0051A828 /* UIScreen+Extension.swift in Sources */,
+				5C5969A41DD45F9100971BF7 /* DiscoverViewController.swift in Sources */,
+				5C0E0F331DD956B0000636EB /* JVVStatusPictureView.swift in Sources */,
+				5C4F74831DD6BA130051A828 /* JVVStatus.swift in Sources */,
+				5C4F747D1DD6A4070051A828 /* JVVFPSLabel.swift in Sources */,
+				5C2383321DD3FB9500DE3C10 /* JVVBaseViewController.swift in Sources */,
+				5CB4C2F01DD31D4400DECB55 /* JWViewController.swift in Sources */,
+				5C4F74851DD6BA4E0051A828 /* JVVUser.swift in Sources */,
+				5C0F46081DD98DBD00404431 /* Status.swift in Sources */,
+				5C0E0F351DD958A0000636EB /* VVLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +573,7 @@
 		};
 		5CB4C2ED1DD31C8D00DECB55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3F7759BB66B15A19FA2ED5 /* Pods-JYWeiboDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE8CSGTB5D;
@@ -270,6 +587,7 @@
 		};
 		5CB4C2EE1DD31C8D00DECB55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19660B1023BE28423EC52D21 /* Pods-JYWeiboDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE8CSGTB5D;
@@ -300,6 +618,7 @@
 				5CB4C2EE1DD31C8D00DECB55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

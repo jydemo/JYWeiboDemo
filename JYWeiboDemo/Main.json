@@ -1,0 +1,16 @@
+ [
+  
+  
+  {"clsName": "HomeViewController", "title": "首页", "imageName": "home"},
+  
+  {"clsName": "MessageViewController", "title": "消息", "imageName": "message_center"},
+  
+  {"clsName": "UIViewController"},
+  
+  {"clsName": "DiscoverViewController", "title": "发现", "imageName": "discover"},
+  
+  {"clsName": "ProfileViewController", "title": "个人", "imageName": "profile"}
+  
+  
+  
+  ]
