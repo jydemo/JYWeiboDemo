@@ -192,28 +192,6 @@ class JVVStatusViewModel {
         
         let attrString = NSMutableAttributedString(string: string)
         
-        /*let pattern = "\\[.*?\\]"
-        
-        guard let regx = try? NSRegularExpression(pattern: pattern, options: []) else {
-        
-            return attrString
-        
-        }
-        
-        let range =  NSRange(location: 0, length: attrString.length)
-        
-        let matches = regx.matches(in: string, options: [], range: range)
-        
-        for m in matches {
-            
-            let r = m.rangeAt(0)
-            
-            let _ = (attrString.string as NSString).substring(with: r)
-            
-            
-        
-        }*/
-        
         let range = NSRange(location: 0, length: attrString.length)
         
         attrString.addAttributes([NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.darkGray], range: range)

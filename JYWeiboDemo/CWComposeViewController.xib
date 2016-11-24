@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CWComposeViewController" customModule="JYWeiboDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="sendButton" destination="cva-8V-bZT" id="Xjb-nk-Vmg"/>
+                <outlet property="textView" destination="EyB-Kz-Z1C" id="3sv-ZT-ebb"/>
+                <outlet property="titleLabel" destination="A5y-17-o5N" id="64A-t1-Q2A"/>
+                <outlet property="toolBar" destination="L2D-MT-HWx" id="Goz-gi-66P"/>
+                <outlet property="toolBarBottomCons" destination="CHn-zF-GMB" id="F1O-Ie-RxR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QfK-ro-iut">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EyB-Kz-Z1C">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2D-MT-HWx">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="Item" id="VMv-B7-cHS"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EyB-Kz-Z1C" firstAttribute="top" secondItem="QfK-ro-iut" secondAttribute="top" id="9bE-PR-A4Y"/>
+                <constraint firstItem="L2D-MT-HWx" firstAttribute="top" secondItem="EyB-Kz-Z1C" secondAttribute="bottom" id="CDu-07-91q"/>
+                <constraint firstAttribute="bottom" secondItem="L2D-MT-HWx" secondAttribute="bottom" id="CHn-zF-GMB"/>
+                <constraint firstAttribute="trailing" secondItem="EyB-Kz-Z1C" secondAttribute="trailing" id="CMA-KY-67m"/>
+                <constraint firstAttribute="trailing" secondItem="L2D-MT-HWx" secondAttribute="trailing" id="YlZ-m1-bKb"/>
+                <constraint firstItem="EyB-Kz-Z1C" firstAttribute="leading" secondItem="QfK-ro-iut" secondAttribute="leading" id="gd0-cj-ibs"/>
+                <constraint firstItem="L2D-MT-HWx" firstAttribute="leading" secondItem="QfK-ro-iut" secondAttribute="leading" id="poq-pX-1uN"/>
+            </constraints>
+            <point key="canvasLocation" x="-161" y="-253"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cva-8V-bZT">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <state key="normal" title="发布"/>
+        </button>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A5y-17-o5N">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <attributedString key="attributedText">
+                <fragment content="发微博">
+                    <attributes>
+                        <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                    </attributes>
+                </fragment>
+            </attributedString>
+            <nil key="highlightedColor"/>
+        </label>
+    </objects>
+</document>

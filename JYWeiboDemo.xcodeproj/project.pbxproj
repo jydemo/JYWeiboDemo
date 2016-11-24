@@ -41,6 +41,8 @@
 		5C7C3D8F1DDEF8B700546E91 /* JYRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */; };
 		5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */; };
 		5CA91EC41DD5C335005E51C1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC31DD5C335005E51C1 /* String+Extension.swift */; };
+		5CADE8D21DE6E8D200D72F4D /* CWComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CADE8D11DE6E8D200D72F4D /* CWComposeViewController.xib */; };
+		5CADE8D41DE6EAB400D72F4D /* CWComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADE8D31DE6EAB400D72F4D /* CWComposeViewController.swift */; };
 		5CB3DB841DD46A110096864F /* JVVNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */; };
 		5CB3DB861DD46A780096864F /* JVVWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DB851DD46A780096864F /* JVVWelcomeView.swift */; };
 		5CB3DB881DD46AD50096864F /* JVVNewFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB3DB871DD46AD50096864F /* JVVNewFeatureView.xib */; };
@@ -91,6 +93,8 @@
 		5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYRefreshView.xib; sourceTree = "<group>"; };
 		5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVVUserAccount.swift; path = ../JVVUserAccount.swift; sourceTree = "<group>"; };
 		5CA91EC31DD5C335005E51C1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../String+Extension.swift"; sourceTree = "<group>"; };
+		5CADE8D11DE6E8D200D72F4D /* CWComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWComposeViewController.xib; sourceTree = "<group>"; };
+		5CADE8D31DE6EAB400D72F4D /* CWComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWComposeViewController.swift; sourceTree = "<group>"; };
 		5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVNewFeatureView.swift; sourceTree = "<group>"; };
 		5CB3DB851DD46A780096864F /* JVVWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVWelcomeView.swift; sourceTree = "<group>"; };
 		5CB3DB871DD46AD50096864F /* JVVNewFeatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JVVNewFeatureView.xib; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 				5C4F747C1DD6A4070051A828 /* JVVFPSLabel.swift */,
 				5C4F74861DD6C23C0051A828 /* JVVeiboCommon.swift */,
 				5C0E0F341DD958A0000636EB /* VVLabel.swift */,
+				5CADE8D11DE6E8D200D72F4D /* CWComposeViewController.xib */,
+				5CADE8D31DE6EAB400D72F4D /* CWComposeViewController.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB3DB8A1DD46AF10096864F /* JVVWelcomeView.xib in Resources */,
+				5CADE8D21DE6E8D200D72F4D /* CWComposeViewController.xib in Resources */,
 				5CB4C2E81DD31C8D00DECB55 /* LaunchScreen.storyboard in Resources */,
 				5CB4C2E51DD31C8D00DECB55 /* Assets.xcassets in Resources */,
 				5C0E0F421DD96E9A000636EB /* JVVStatusRetweedCell.xib in Resources */,
@@ -448,6 +455,7 @@
 				5C0F460C1DD9A8DF00404431 /* UIImageView+WebImage.swift in Sources */,
 				5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */,
 				5CB4C2E01DD31C8D00DECB55 /* ViewController.swift in Sources */,
+				5CADE8D41DE6EAB400D72F4D /* CWComposeViewController.swift in Sources */,
 				5CB4C2F21DD31E2A00DECB55 /* UIButtonExtension.swift in Sources */,
 				5C0F460A1DD98E3E00404431 /* User.swift in Sources */,
 				5C2383301DD3FB4800DE3C10 /* JVVNavgationController.swift in Sources */,

@@ -89,15 +89,7 @@ class Status: NSObject {
     
     var attitudes_count: Int = 0
     
-    var retweeted_Status: Status? {
-        
-        didSet {
-            
-            
-        
-        }
-    
-    }
+    var retweeted_Status: Status? 
     
     var repic_urls: [URL]? {
         
