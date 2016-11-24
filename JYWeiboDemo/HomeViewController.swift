@@ -127,6 +127,10 @@ extension HomeViewController {
 
 extension HomeViewController: JVVStatusCellDelegate {
     
-    
+    func statusCellDidTapURLString(cell: JVVStatusCell, urlString: String) {
+        
+        
+        
+    }
 
 }

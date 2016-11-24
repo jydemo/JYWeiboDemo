@@ -64,20 +64,20 @@ class JVVStatusViewModel {
         
         pictureViewSize = calPictureViewSize(count: model.repic_urls?.count)
         
-        //let originalFont = UIFont.systemFont(ofSize: 15)
+        let originalFont = UIFont.systemFont(ofSize: 15)
         
-        //let retweetedFont = UIFont.systemFont(ofSize: 14)
+        let retweetedFont = UIFont.systemFont(ofSize: 14)
         
         if let retweetedStatus = model.retweeted_Status, let name = retweetedStatus.user?.name, let text = retweetedStatus.text {
             
             let  rText = (name) + ":" + (text)
             
-            retweededAttrText = NSMutableAttributedString(string: rText)
+            retweededAttrText = emoticonString(rText, font: retweetedFont)
         
         }
         
         
-        statusAttrText = NSMutableAttributedString(string: model.text!)
+        statusAttrText = emoticonString(model.text!, font: originalFont)
         
         
         updateReowHeight()
@@ -185,6 +185,40 @@ class JVVStatusViewModel {
         }
         
         return String(format: "%.02f 万", Double(count / 10000))
+    
+    }
+    
+    private func emoticonString(_ string: String, font: UIFont) -> NSAttributedString {
+        
+        let attrString = NSMutableAttributedString(string: string)
+        
+        /*let pattern = "\\[.*?\\]"
+        
+        guard let regx = try? NSRegularExpression(pattern: pattern, options: []) else {
+        
+            return attrString
+        
+        }
+        
+        let range =  NSRange(location: 0, length: attrString.length)
+        
+        let matches = regx.matches(in: string, options: [], range: range)
+        
+        for m in matches {
+            
+            let r = m.rangeAt(0)
+            
+            let _ = (attrString.string as NSString).substring(with: r)
+            
+            
+        
+        }*/
+        
+        let range = NSRange(location: 0, length: attrString.length)
+        
+        attrString.addAttributes([NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.darkGray], range: range)
+        
+        return attrString
     
     }
     

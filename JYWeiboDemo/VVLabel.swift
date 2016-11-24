@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol VVLabelDelegate: NSObjectProtocol {
+@objc public protocol VVLabelDelegate: NSObjectProtocol {
     
     @objc optional func labelDidSelectedLinkText(label: VVLabel, text: String)
 
@@ -16,14 +16,12 @@ import UIKit
 
 public class VVLabel: UILabel {
     
-    weak var delegate: VVLabelDelegate?
+    public weak var delegate: VVLabelDelegate?
+    
+    public var linkTextColor = UIColor.blue
+    
+    public var selectedBackgroundColor = UIColor.lightGray
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    
 
 }
