@@ -41,6 +41,8 @@
 		5C7C3D8F1DDEF8B700546E91 /* JYRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */; };
 		5CA91EC21DD5C174005E51C1 /* JVVUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */; };
 		5CA91EC41DD5C335005E51C1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA91EC31DD5C335005E51C1 /* String+Extension.swift */; };
+		5CAB2C4B1DE9593C005D2F01 /* CWComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB2C4A1DE9593C005D2F01 /* CWComposeTypeView.swift */; };
+		5CAB2C4D1DE9594E005D2F01 /* CWComposeTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CAB2C4C1DE9594E005D2F01 /* CWComposeTypeView.xib */; };
 		5CADE8D21DE6E8D200D72F4D /* CWComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CADE8D11DE6E8D200D72F4D /* CWComposeViewController.xib */; };
 		5CADE8D41DE6EAB400D72F4D /* CWComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CADE8D31DE6EAB400D72F4D /* CWComposeViewController.swift */; };
 		5CB3DB841DD46A110096864F /* JVVNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */; };
@@ -93,6 +95,8 @@
 		5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYRefreshView.xib; sourceTree = "<group>"; };
 		5CA91EC11DD5C174005E51C1 /* JVVUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVVUserAccount.swift; path = ../JVVUserAccount.swift; sourceTree = "<group>"; };
 		5CA91EC31DD5C335005E51C1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../String+Extension.swift"; sourceTree = "<group>"; };
+		5CAB2C4A1DE9593C005D2F01 /* CWComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWComposeTypeView.swift; sourceTree = "<group>"; };
+		5CAB2C4C1DE9594E005D2F01 /* CWComposeTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWComposeTypeView.xib; sourceTree = "<group>"; };
 		5CADE8D11DE6E8D200D72F4D /* CWComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWComposeViewController.xib; sourceTree = "<group>"; };
 		5CADE8D31DE6EAB400D72F4D /* CWComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWComposeViewController.swift; sourceTree = "<group>"; };
 		5CB3DB831DD46A110096864F /* JVVNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVNewFeatureView.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		5C0E0F371DD96D12000636EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5CAB2C491DE9591E005D2F01 /* Compose */,
 				5C0E0F3F1DD96E02000636EB /* Other */,
 				5C0E0F3C1DD96D8B000636EB /* Profile */,
 				5C0E0F3B1DD96D76000636EB /* Discover */,
@@ -269,6 +274,15 @@
 			name = Refresh;
 			sourceTree = "<group>";
 		};
+		5CAB2C491DE9591E005D2F01 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				5CAB2C4A1DE9593C005D2F01 /* CWComposeTypeView.swift */,
+				5CAB2C4C1DE9594E005D2F01 /* CWComposeTypeView.xib */,
+			);
+			name = Compose;
+			sourceTree = "<group>";
+		};
 		5CB4C2D11DD31C8D00DECB55 = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +405,7 @@
 				5C23832C1DD3FAB200DE3C10 /* Main.json in Resources */,
 				5CB3DB881DD46AD50096864F /* JVVNewFeatureView.xib in Resources */,
 				5C0E0F311DD93E65000636EB /* JVVStatusNormalCell.xib in Resources */,
+				5CAB2C4D1DE9594E005D2F01 /* CWComposeTypeView.xib in Resources */,
 				5CB4C2E31DD31C8D00DECB55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +474,7 @@
 				5CB4C2F21DD31E2A00DECB55 /* UIButtonExtension.swift in Sources */,
 				5C0F460A1DD98E3E00404431 /* User.swift in Sources */,
 				5C2383301DD3FB4800DE3C10 /* JVVNavgationController.swift in Sources */,
+				5CAB2C4B1DE9593C005D2F01 /* CWComposeTypeView.swift in Sources */,
 				5C0E0F2F1DD93E41000636EB /* JVVStatuscell.swift in Sources */,
 				5C4F747F1DD6B9360051A828 /* JVVStatusListViewModel.swift in Sources */,
 				5C4887371DD5BEA700806BC5 /* JVVVNetworkManager.swift in Sources */,

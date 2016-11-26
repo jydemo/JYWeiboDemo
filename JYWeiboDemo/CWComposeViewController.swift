@@ -17,6 +17,8 @@ class CWComposeViewController: UIViewController {
     @IBOutlet weak var toolBarBottomCons: NSLayoutConstraint!
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

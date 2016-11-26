@@ -57,6 +57,34 @@ class JVVMainViewController: UITabBarController {
         
     }()
     
+    @objc fileprivate func composeBtnAction() {
+        
+       let view = CWComposeTypeView.composeTypeView()
+        
+        view.show { [weak view] (clsName) in
+            
+            guard let clsName = clsName, let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type else {
+            
+                view?.removeFromSuperview()
+                
+                return
+            
+            }
+            
+            let vc = cls.init()
+            
+            let nav = UINavigationController(rootViewController: vc)
+            
+            self.present(nav, animated: true, completion: {
+                
+                view?.removeFromSuperview()
+                
+            })
+            
+        }
+    
+    }
+    
 }
 
 extension JVVMainViewController {
@@ -68,6 +96,8 @@ extension JVVMainViewController {
         let count = CGFloat(childViewControllers.count)
         
         let w = tabBar.bounds.width / count
+        
+        composeButton.addTarget(self, action: #selector(composeBtnAction), for: .touchUpInside)
         
         composeButton.frame = tabBar.bounds.insetBy(dx: 2 * w, dy: 0)
     }
