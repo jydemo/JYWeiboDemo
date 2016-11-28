@@ -68,18 +68,66 @@ class CWComposeTypeView: UIView {
         
     
     }
+    
     @IBAction func closeAction(_ sender: UIButton) {
         
         print("sender \(sender)")
         
         hiddenButtons()
     }
+    
     @IBAction func returnButton(_ sender: Any) {
+        
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        
+        closeCenterX.constant = 0
+        
+        returnCenterX.constant = 0
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            
+            self.layoutIfNeeded()
+            
+            self.returnButton.alpha = 0
+        
+        }) { (_) in
+            
+           self.returnButton.isHidden = true
+        
+            self.returnButton.alpha = 1
+        }
+        
+    }
+    
+    @objc fileprivate func btnAction(selectedbutton: CWComposeTypeButton) {
+        
+        
+        
+    }
+    
+    @objc fileprivate func moreAction() {
+        
+        scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width, y: 0), animated: true)
+        
+        let margin = scrollView.bounds.width / 6
+        
+        returnButton.isHidden = false
+        
+        closeCenterX.constant += margin
+        
+        returnCenterX.constant -= margin
+        
+        UIView.animate(withDuration: 0.25) {
+        
+            self.layoutIfNeeded()
+        
+        }
+    
     }
     
     func addBtns(view: UIView, index: Int) {
     
-        /*let count = 6
+        let count = 6
         
         for i in index..<(index + count) {
             
@@ -95,9 +143,37 @@ class CWComposeTypeView: UIView {
                 continue
             }
             
-            //let btn = CW
+            let btn = CWComposeTypeButton.composeTypeButton(imageName: imageName, title: title)
+            
+            view.addSubview(btn)
+            
+            if let actionName = dic["actionName"] {
+            
+                btn.addTarget(self, action: Selector(actionName), for: .touchUpInside)
+            
+            } else {
+                
+                btn.addTarget(self, action: #selector(btnAction(selectedbutton:)), for: .touchUpInside)
+            
+            }
+            
+            btn.clsName = dic["clsName"]
         
-        }*/
+        }
+        
+        let btnSize = CGSize(width: 100, height: 100)
+        
+        let margin = (view.bounds.width - 3 * btnSize.width) / 4
+        
+        for (i, btn) in view.subviews.enumerated() {
+        
+            let y: CGFloat = ( i > 2) ? (view.bounds.height - btnSize.height) : 0
+            
+            let x = CGFloat((i % 3) + 1) * margin + CGFloat(i % 3) * btnSize.width
+            
+            btn.frame = CGRect(x: x, y: y, width: btnSize.width, height: btnSize.height)
+        
+        }
     
     }
 
@@ -106,14 +182,12 @@ class CWComposeTypeView: UIView {
 fileprivate extension CWComposeTypeView {
     
     func setupUI() {
-    
         
         layoutIfNeeded()
         
         let rect = scrollView.bounds
         
         for i in 0..<2 {
-        
             
             let v = UIView(frame: rect.offsetBy(dx: CGFloat(i) * scrollView.bounds.width, dy: 0))
             

@@ -90,8 +90,8 @@
                 <outlet property="closeCenterX" destination="QB9-zw-THg" id="NWc-LJ-yHm"/>
                 <outlet property="closeCenterY" destination="K1P-0p-0UF" id="d2D-lt-yYl"/>
                 <outlet property="returnButton" destination="Buj-6Z-Ofx" id="vz4-zJ-ksV"/>
-                <outlet property="returnCenterX" destination="hS7-Ua-15m" id="Yvn-Fh-6oy"/>
-                <outlet property="returnCenterY" destination="Tbk-Zg-qVt" id="VoS-IM-846"/>
+                <outlet property="returnCenterX" destination="hS7-Ua-15m" id="KRc-Yk-ZXj"/>
+                <outlet property="returnCenterY" destination="Tbk-Zg-qVt" id="6fX-Ha-R6o"/>
                 <outlet property="scrollView" destination="3Xi-BA-ufx" id="TUU-De-0o5"/>
             </connections>
             <point key="canvasLocation" x="-254" y="5"/>

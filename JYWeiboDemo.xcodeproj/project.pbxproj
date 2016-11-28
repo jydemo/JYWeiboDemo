@@ -31,6 +31,8 @@
 		5C4F74851DD6BA4E0051A828 /* JVVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74841DD6BA4E0051A828 /* JVVUser.swift */; };
 		5C4F74871DD6C23C0051A828 /* JVVeiboCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74861DD6C23C0051A828 /* JVVeiboCommon.swift */; };
 		5C4F74891DD6C38D0051A828 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F74881DD6C38D0051A828 /* UIScreen+Extension.swift */; };
+		5C55C1D31DEBAFB600CF5AD4 /* CWComposeTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C55C1D21DEBAFB600CF5AD4 /* CWComposeTypeButton.swift */; };
+		5C55C1D51DEBAFE000CF5AD4 /* CWComposeTypeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C55C1D41DEBAFE000CF5AD4 /* CWComposeTypeButton.xib */; };
 		5C5969A01DD45F6B00971BF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C59699F1DD45F6B00971BF7 /* HomeViewController.swift */; };
 		5C5969A21DD45F8000971BF7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A11DD45F8000971BF7 /* MessageViewController.swift */; };
 		5C5969A41DD45F9100971BF7 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */; };
@@ -85,6 +87,8 @@
 		5C4F74841DD6BA4E0051A828 /* JVVUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVUser.swift; sourceTree = "<group>"; };
 		5C4F74861DD6C23C0051A828 /* JVVeiboCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVeiboCommon.swift; sourceTree = "<group>"; };
 		5C4F74881DD6C38D0051A828 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		5C55C1D21DEBAFB600CF5AD4 /* CWComposeTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWComposeTypeButton.swift; sourceTree = "<group>"; };
+		5C55C1D41DEBAFE000CF5AD4 /* CWComposeTypeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWComposeTypeButton.xib; sourceTree = "<group>"; };
 		5C59699F1DD45F6B00971BF7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C5969A11DD45F8000971BF7 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		5C5969A31DD45F9100971BF7 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 			children = (
 				5CAB2C4A1DE9593C005D2F01 /* CWComposeTypeView.swift */,
 				5CAB2C4C1DE9594E005D2F01 /* CWComposeTypeView.xib */,
+				5C55C1D21DEBAFB600CF5AD4 /* CWComposeTypeButton.swift */,
+				5C55C1D41DEBAFE000CF5AD4 /* CWComposeTypeButton.xib */,
 			);
 			name = Compose;
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 				5CB3DB881DD46AD50096864F /* JVVNewFeatureView.xib in Resources */,
 				5C0E0F311DD93E65000636EB /* JVVStatusNormalCell.xib in Resources */,
 				5CAB2C4D1DE9594E005D2F01 /* CWComposeTypeView.xib in Resources */,
+				5C55C1D51DEBAFE000CF5AD4 /* CWComposeTypeButton.xib in Resources */,
 				5CB4C2E31DD31C8D00DECB55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +503,7 @@
 				5C0E0F331DD956B0000636EB /* JVVStatusPictureView.swift in Sources */,
 				5C4F74831DD6BA130051A828 /* JVVStatus.swift in Sources */,
 				5C4F747D1DD6A4070051A828 /* JVVFPSLabel.swift in Sources */,
+				5C55C1D31DEBAFB600CF5AD4 /* CWComposeTypeButton.swift in Sources */,
 				5C2383321DD3FB9500DE3C10 /* JVVBaseViewController.swift in Sources */,
 				5CB4C2F01DD31D4400DECB55 /* JWViewController.swift in Sources */,
 				5C7C3D8B1DDEF75800546E91 /* JVRefreshView.swift in Sources */,
