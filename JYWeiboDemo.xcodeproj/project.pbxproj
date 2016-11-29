@@ -23,6 +23,9 @@
 		5C23832E1DD3FAF700DE3C10 /* Bundle+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C23832D1DD3FAF700DE3C10 /* Bundle+extension.swift */; };
 		5C2383301DD3FB4800DE3C10 /* JVVNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C23832F1DD3FB4800DE3C10 /* JVVNavgationController.swift */; };
 		5C2383321DD3FB9500DE3C10 /* JVVBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2383311DD3FB9500DE3C10 /* JVVBaseViewController.swift */; };
+		5C3A5BE21DED717C0063B2D2 /* CWRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3A5BE11DED717C0063B2D2 /* CWRefreshView.swift */; };
+		5C3A5BE41DED71900063B2D2 /* CWRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3A5BE31DED71900063B2D2 /* CWRefreshView.xib */; };
+		5C3A5BE61DED73170063B2D2 /* CWRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3A5BE51DED73170063B2D2 /* CWRefreshControl.swift */; };
 		5C4887371DD5BEA700806BC5 /* JVVVNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4887361DD5BEA700806BC5 /* JVVVNetworkManager.swift */; };
 		5C4F747D1DD6A4070051A828 /* JVVFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F747C1DD6A4070051A828 /* JVVFPSLabel.swift */; };
 		5C4F747F1DD6B9360051A828 /* JVVStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F747E1DD6B9360051A828 /* JVVStatusListViewModel.swift */; };
@@ -79,6 +82,9 @@
 		5C23832D1DD3FAF700DE3C10 /* Bundle+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+extension.swift"; sourceTree = "<group>"; };
 		5C23832F1DD3FB4800DE3C10 /* JVVNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVNavgationController.swift; sourceTree = "<group>"; };
 		5C2383311DD3FB9500DE3C10 /* JVVBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVBaseViewController.swift; sourceTree = "<group>"; };
+		5C3A5BE11DED717C0063B2D2 /* CWRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWRefreshView.swift; sourceTree = "<group>"; };
+		5C3A5BE31DED71900063B2D2 /* CWRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CWRefreshView.xib; sourceTree = "<group>"; };
+		5C3A5BE51DED73170063B2D2 /* CWRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWRefreshControl.swift; sourceTree = "<group>"; };
 		5C4887361DD5BEA700806BC5 /* JVVVNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVVNetworkManager.swift; sourceTree = "<group>"; };
 		5C4F747C1DD6A4070051A828 /* JVVFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVFPSLabel.swift; sourceTree = "<group>"; };
 		5C4F747E1DD6B9360051A828 /* JVVStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVVStatusListViewModel.swift; sourceTree = "<group>"; };
@@ -272,6 +278,9 @@
 				5C7C3D8A1DDEF75800546E91 /* JVRefreshView.swift */,
 				5C7C3D8C1DDEF79B00546E91 /* JYRefreshControl.swift */,
 				5C7C3D8E1DDEF8B700546E91 /* JYRefreshView.xib */,
+				5C3A5BE11DED717C0063B2D2 /* CWRefreshView.swift */,
+				5C3A5BE31DED71900063B2D2 /* CWRefreshView.xib */,
+				5C3A5BE51DED73170063B2D2 /* CWRefreshControl.swift */,
 			);
 			name = Refresh;
 			sourceTree = "<group>";
@@ -402,6 +411,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3A5BE41DED71900063B2D2 /* CWRefreshView.xib in Resources */,
 				5CB3DB8A1DD46AF10096864F /* JVVWelcomeView.xib in Resources */,
 				5CADE8D21DE6E8D200D72F4D /* CWComposeViewController.xib in Resources */,
 				5CB4C2E81DD31C8D00DECB55 /* LaunchScreen.storyboard in Resources */,
@@ -490,8 +500,10 @@
 				5C5969A21DD45F8000971BF7 /* MessageViewController.swift in Sources */,
 				5C0F46071DD98DBD00404431 /* Comments.swift in Sources */,
 				5C4F74811DD6B9C60051A828 /* JVVStatusViewModel.swift in Sources */,
+				5C3A5BE21DED717C0063B2D2 /* CWRefreshView.swift in Sources */,
 				5CA91EC41DD5C335005E51C1 /* String+Extension.swift in Sources */,
 				5C4F74871DD6C23C0051A828 /* JVVeiboCommon.swift in Sources */,
+				5C3A5BE61DED73170063B2D2 /* CWRefreshControl.swift in Sources */,
 				5CB3DB861DD46A780096864F /* JVVWelcomeView.swift in Sources */,
 				5C23832E1DD3FAF700DE3C10 /* Bundle+extension.swift in Sources */,
 				5C5969A61DD45FA200971BF7 /* ProfileViewController.swift in Sources */,

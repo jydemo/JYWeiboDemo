@@ -11,22 +11,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Z6C-8X-YeZ" customClass="JYRefreshView" customModule="JYWeiboDemo" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="kPa-hH-BBs" customClass="CWRefreshView" customModule="JYWeiboDemo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="180" height="75"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下拉开始刷新控件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCP-Jd-2Uf">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下拉开始刷新控件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umh-tU-CDk">
                     <rect key="frame" x="55" y="29" width="116" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tableview_pull_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="m0Z-7A-VcI">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tableview_pull_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="0Es-4h-w5M">
                     <rect key="frame" x="9" y="24" width="38" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ksl-CK-WB4">
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4JP-Dg-aym">
                     <rect key="frame" x="18" y="30" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </activityIndicatorView>
@@ -35,11 +35,11 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="tipIcon" destination="m0Z-7A-VcI" id="5nq-Zi-JmC"/>
-                <outlet property="tipIndicator" destination="ksl-CK-WB4" id="TyA-ID-otl"/>
-                <outlet property="tipLabel" destination="gCP-Jd-2Uf" id="GgP-Fz-mNF"/>
+                <outlet property="tipIcon" destination="0Es-4h-w5M" id="DZ8-6S-uqn"/>
+                <outlet property="tipIndicator" destination="4JP-Dg-aym" id="xlq-Bi-Caf"/>
+                <outlet property="tipLabel" destination="Umh-tU-CDk" id="PNV-aw-WeW"/>
             </connections>
-            <point key="canvasLocation" x="-402" y="-270"/>
+            <point key="canvasLocation" x="-41" y="70"/>
         </view>
     </objects>
     <resources>

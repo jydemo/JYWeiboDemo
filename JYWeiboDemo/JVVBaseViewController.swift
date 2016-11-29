@@ -12,7 +12,7 @@ class JVVBaseViewController: UIViewController {
     
     var isPullup = false
     
-    var refreshControl:JYRefreshControl?
+    var refreshControl:CWRefreshControl?
     
     var tableView: UITableView?
     
@@ -83,7 +83,7 @@ extension JVVBaseViewController {
         
         tableView?.scrollIndicatorInsets = tableView!.contentInset
         
-        refreshControl = JYRefreshControl()
+        refreshControl = CWRefreshControl()
         
         tableView?.addSubview(refreshControl!)
         
@@ -99,6 +99,8 @@ extension JVVBaseViewController {
         navBar.barTintColor = UIColor(red: 246, green: 246, blue: 246, alpha: 1)
         
         navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
+        
+        navBar.tintColor = UIColor.orange
         
     }
     
@@ -120,9 +122,10 @@ extension JVVBaseViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
         let row = indexPath.row
         
-        let section = tableView.numberOfSections
+        let section = tableView.numberOfSections - 1
         
         if row < 0 || section < 0 {
             
