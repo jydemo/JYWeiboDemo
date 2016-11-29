@@ -87,8 +87,6 @@ class JVVStatusPictureView: UIView {
         
         }
         
-        //print(viewModel?.pictureViewSize.height)
-        
         heightCons.constant = viewModel?.pictureViewSize.height ?? 0
             
         

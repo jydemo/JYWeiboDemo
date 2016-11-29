@@ -26,7 +26,7 @@ class CWComposeTypeView: UIView {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    fileprivate let buttonsInfo = [["imageName": "tabbar_compose_idea", "title": "文字","clsName": "YWComposeViewController"],
+    fileprivate let buttonsInfo = [["imageName": "tabbar_compose_idea", "title": "文字","clsName": "CWComposeViewController"],
                                    ["imageName": "tabbar_compose_photo", "title": "照片/视频"],
                                    ["imageName": "tabbar_compose_weibo", "title": "长微博"],
                                    ["imageName": "tabbar_compose_lbs", "title": "签到"],
@@ -71,8 +71,6 @@ class CWComposeTypeView: UIView {
     
     @IBAction func closeAction(_ sender: UIButton) {
         
-        print("sender \(sender)")
-        
         hiddenButtons()
     }
     
@@ -101,7 +99,41 @@ class CWComposeTypeView: UIView {
     
     @objc fileprivate func btnAction(selectedbutton: CWComposeTypeButton) {
         
+        let page = Int(scrollView.contentOffset.x / scrollView.bounds.width)
         
+        let view = scrollView.subviews[page]
+        
+        for (i, btn) in view.subviews.enumerated() {
+            
+            let scaleAnim: POPBasicAnimation = POPBasicAnimation(propertyNamed: kPOPViewScaleXY)
+            
+            let scale = (selectedbutton == btn) ? 2 : 0.2
+            
+            scaleAnim.toValue = NSValue(cgPoint: CGPoint(x: scale, y: scale))
+            
+            scaleAnim.duration = 0.5
+            
+            btn.pop_add(scaleAnim, forKey: nil)
+            
+            let alphaAnim: POPBasicAnimation = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
+            
+            alphaAnim.toValue = 0.2
+            
+            alphaAnim.duration = 0.5
+            
+            btn.pop_add(alphaAnim, forKey: nil)
+            
+            if i == 0 {
+                
+                alphaAnim.completionBlock = { _, _ in
+                    
+                    self.completionBlock?(selectedbutton.clsName)
+                
+                }
+            
+            }
+        
+        }
         
     }
     

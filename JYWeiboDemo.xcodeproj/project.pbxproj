@@ -236,8 +236,6 @@
 				5C4F747C1DD6A4070051A828 /* JVVFPSLabel.swift */,
 				5C4F74861DD6C23C0051A828 /* JVVeiboCommon.swift */,
 				5C0E0F341DD958A0000636EB /* VVLabel.swift */,
-				5CADE8D11DE6E8D200D72F4D /* CWComposeViewController.xib */,
-				5CADE8D31DE6EAB400D72F4D /* CWComposeViewController.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -281,6 +279,8 @@
 		5CAB2C491DE9591E005D2F01 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
+				5CADE8D11DE6E8D200D72F4D /* CWComposeViewController.xib */,
+				5CADE8D31DE6EAB400D72F4D /* CWComposeViewController.swift */,
 				5CAB2C4A1DE9593C005D2F01 /* CWComposeTypeView.swift */,
 				5CAB2C4C1DE9594E005D2F01 /* CWComposeTypeView.xib */,
 				5C55C1D21DEBAFB600CF5AD4 /* CWComposeTypeButton.swift */,

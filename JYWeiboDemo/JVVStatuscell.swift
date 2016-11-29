@@ -48,10 +48,6 @@ class JVVStatusCell: UITableViewCell {
                 sourceLabel.text = model.status.source
                 
                 pictureView.viewModel = model
-                
-                print("底部工具栏\(model.status.user?.name) \(footerView.frame.maxY)")
-                
-                //model.rowHeight = footerView.frame.maxY
             
             }
             

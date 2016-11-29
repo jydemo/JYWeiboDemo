@@ -40,8 +40,6 @@ class HomeViewController: JVVBaseViewController {
                 
                 if shouldRefresh {
                     
-                    //print(self.listViewModel.statusList.last?.status.text)
-                    
                     self.tableView?.reloadData()
                 
                 }
@@ -116,8 +114,6 @@ extension HomeViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         let viewModel = listViewModel.statusList[indexPath.row]
-        
-        print("row height \(viewModel.status.user?.name) ------- \(viewModel.rowHeight)")
         
         return viewModel.rowHeight
         

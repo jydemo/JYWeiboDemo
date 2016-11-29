@@ -119,8 +119,6 @@ class JVVStatusListViewModel {
         
         group.notify(queue: DispatchQueue.main) {
             
-            print("图像缓存\(length/1024)k")
-            
             finished(true, true)
         }
     }

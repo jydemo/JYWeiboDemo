@@ -8,6 +8,8 @@
 
 import UIKit
 
+import SVProgressHUD
+
 class CWComposeViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
@@ -17,12 +19,47 @@ class CWComposeViewController: UIViewController {
     @IBOutlet weak var toolBarBottomCons: NSLayoutConstraint!
     
     
+    @IBAction func sendAction(_ sender: Any) {
+        
+        guard let text = textView.text else { return }
+        
+        let image = UIImage(named: "icon_small_kangaroo_loading_1")
+        
+        JVVVNetworkManager.postStatus(text: text, image: image) { (result, isSuccess) in
+            
+            let message = isSuccess ? "发布成功" : "网络不给力"
+            
+            SVProgressHUD.setDefaultStyle(.dark)
+            
+            SVProgressHUD.showInfo(withStatus: message)
+            
+            if isSuccess {
+                
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
+                    
+                    SVProgressHUD.setDefaultStyle(.light)
+                    
+                    self.backAction()
+                })
+            
+            } else {
+                
+                
+            
+            }
+        
+        }
+        
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setupUI()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,6 +82,8 @@ fileprivate extension CWComposeViewController {
         view.backgroundColor = UIColor.white
     
         setupNavgationBar()
+    
+        setToolBar()
     
     }
     
@@ -70,13 +109,45 @@ fileprivate extension CWComposeViewController {
         
         var itemArray = [UIBarButtonItem]()
         
-        for item in itemArray {
+        for item in itemSettings {
         
+            guard let imageName = item["imageName"] else { return }
             
+            let image = UIImage(named: imageName)
+            
+            let imageHL = UIImage(named: imageName + "_highlighted")
+            
+            let btn = UIButton()
+            
+            btn.setImage(image, for: .normal)
+            
+            btn.setImage(imageHL, for: .highlighted)
+            
+            btn.sizeToFit()
+            
+            itemArray.append(UIBarButtonItem(customView: btn))
+            
+            itemArray.append(UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil))
             
         
         }
+        
+        itemArray.removeLast()
+        
+        toolBar.items = itemArray
     
+    }
+
+}
+
+extension CWComposeViewController: UITextViewDelegate {
+    
+    func textViewDidChange(_ textView: UITextView) {
+        
+        print("长度====\(textView.text.characters.count)==")
+        
+        sendButton.isEnabled = textView.hasText
+        
     }
 
 }
